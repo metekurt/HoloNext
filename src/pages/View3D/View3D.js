@@ -6,7 +6,7 @@ function View3D(props) {
   return (
     <div className="holonext-viewer">
       <holonext-viewer
-        style={{ height: "741px", width: "1584px" }}
+        style={{ height: "97vh", width: "99vw" }}
         sceneId={sceneId}
       ></holonext-viewer>
       <a href="/">
