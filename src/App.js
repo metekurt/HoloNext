@@ -5,7 +5,11 @@ import HomePage from "./pages/HomePage/HomePage";
 function App() {
   const pathname = window.location.pathname;
 
-  return <div>{pathname === "/" ? <HomePage /> : <View3D />}</div>;
+  return (
+    <div>
+      {pathname === "/" ? <HomePage /> : <View3D pathname={pathname} />}
+    </div>
+  );
 }
 
 export default App;
