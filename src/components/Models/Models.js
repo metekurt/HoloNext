@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import sceneIds from "../../constant";
+import constant from "../../constant";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -24,20 +24,31 @@ function Models(props) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container rowSpacing={4} spacing={2}>
-        <Grid item xs={2}>
-          <Item>model {props.count}</Item>
+      <Grid container rowSpacing={4} spacing={0.5}>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <h4>{constant.titles[props.count - 1]}</h4>
+            <hr />
+            <p>{constant.texts[props.count - 1]}</p>
+          </Item>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <img src={image} className="model-image" alt="logo" />
         </Grid>
-        <Grid item xs={2}>
-          <Item>model {props.count}</Item>
+        <Grid item xs={3}>
+          <Item>
+            {" "}
+            <h4>{constant.titles[constant.titles.length - props.count]}</h4>
+            <hr />
+            <p>{constant.texts[constant.texts.length - props.count]}</p>
+          </Item>
         </Grid>
         <Grid item xs={12}>
           <Button
-            href={`/view3d/${sceneIds[props.count - 1]}`}
+            href={`/view3d/${constant.sceneIds[props.count - 1]}`}
             variant="outlined"
+            size="large"
           >
             View in 3D
           </Button>

@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(141deg, #80808d 0, #ffffff 51%, #2b5e48 85%);
+}
+
 .App {
   text-align: center;
   padding: 10px;
@@ -29,4 +33,22 @@
   right: 50px;
   position: fixed;
   cursor: pointer;
+}
+
+.css-cnd76u-MuiPaper-root {
+  background-color: unset !important;
+  font-family: unset !important;
+  font-size: unset !important;
+}
+
+.css-1equabv-MuiGrid-root {
+  margin-top: 13% !important;
+}
+
+.css-19yndnj-MuiGrid-root {
+  padding: 10px;
+}
+
+.css-1i5alow-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+  background-color: #6a8e7f !important  ;
 }

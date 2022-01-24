@@ -29,7 +29,7 @@ function HomePage() {
           <ArrowBackRoundedIcon
             onClick={goLeft}
             fontSize="large"
-            color="primary"
+            color="action"
           />
         </div>
         <Models count={count} />
@@ -37,7 +37,7 @@ function HomePage() {
           <ArrowForwardRoundedIcon
             onClick={goRight}
             fontSize="large"
-            color="primary"
+            color="action"
           />
         </div>
       </div>

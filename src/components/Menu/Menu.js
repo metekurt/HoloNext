@@ -4,12 +4,10 @@ import SpeedDialAction from "@mui/material/SpeedDialAction";
 import MenuIcon from "@mui/icons-material/Menu";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
-import CollectionsIcon from "@mui/icons-material/Collections";
 
 const actions = [
   { icon: <InfoIcon />, name: "About" },
   { icon: <ContactMailIcon />, name: "Contact" },
-  { icon: <CollectionsIcon />, name: "Gallery" },
 ];
 
 export default function BasicSpeedDial() {
