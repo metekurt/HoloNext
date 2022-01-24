@@ -1,5 +1,8 @@
 body {
   background: linear-gradient(141deg, #80808d 0, #ffffff 51%, #2b5e48 85%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .App {
@@ -51,4 +54,10 @@ body {
 
 .css-1i5alow-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
   background-color: #6a8e7f !important  ;
+}
+
+.css-1osj8n2-MuiGrid-root > img {
+  height: 100%;
+  width: 100%;
+  max-width: 75%;
 }
